@@ -6,7 +6,6 @@ namespace CSharp_KataRPNCalculator
     internal class RpnCalculatorShould
     {
         [Test]
-        [Ignore("Remove to enable the test")]
         public void Return_zero_when_input_is_an_empty_string()
         {
             var result = RpnCalculator.Calculate("");
@@ -15,7 +14,6 @@ namespace CSharp_KataRPNCalculator
 
         [TestCase("1", 1)]
         [TestCase("4", 4)]
-        [Ignore("Remove to enable the test")]
         public void Return_number_when_input_is_a_single_number(string input, int expected)
         {
             var result = RpnCalculator.Calculate(input);

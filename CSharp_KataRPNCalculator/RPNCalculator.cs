@@ -7,7 +7,12 @@ namespace CSharp_KataRPNCalculator
     {
         public static int Calculate(string input)
         {
-            throw new NotImplementedException();
+            if (string.IsNullOrEmpty(input))
+            {
+                return 0;
+            }
+
+            return int.Parse(input);
         }
     }
 }
