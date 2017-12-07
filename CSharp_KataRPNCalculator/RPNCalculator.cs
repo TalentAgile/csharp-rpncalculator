@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharp_KataRPNCalculator
 {
-    public class RpnCalculator
+    public static class RpnCalculator
     {
+        public static int Calculate(string input)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
