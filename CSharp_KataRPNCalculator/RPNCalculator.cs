@@ -14,15 +14,19 @@ namespace CSharp_KataRPNCalculator
 
             var inputs = input.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-            if (inputs.Length > 1)
+            if (inputs.Length == 1)
             {
-                switch (inputs[2])
-                {
-                    case "+":
-                        return int.Parse(inputs[0]) + int.Parse(inputs[1]);
-                    case "-":
-                        return int.Parse(inputs[0]) - int.Parse(inputs[1]);
-                }
+                return int.Parse(input);
+            }
+
+            switch (inputs[2])
+            {
+                case "+":
+                    return int.Parse(inputs[0]) + int.Parse(inputs[1]);
+                case "-":
+                    return int.Parse(inputs[0]) - int.Parse(inputs[1]);
+                case "*":
+                    return int.Parse(inputs[0]) * int.Parse(inputs[1]);
             }
 
             return int.Parse(input);
