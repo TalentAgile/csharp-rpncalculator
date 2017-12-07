@@ -22,7 +22,6 @@ namespace CSharp_KataRPNCalculator
 
         [TestCase("1 1 +", 2)]
         [TestCase("6 3 +", 9)]
-        [Ignore("Remove to enable the test")]
         public void Return_sum_of_numbers_when_input_contains_two_numbers_and_plus_sign(string input, int expected)
         {
             var result = RpnCalculator.Calculate(input);

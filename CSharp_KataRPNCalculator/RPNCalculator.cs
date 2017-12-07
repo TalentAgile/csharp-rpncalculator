@@ -12,6 +12,13 @@ namespace CSharp_KataRPNCalculator
                 return 0;
             }
 
+            var inputs = input.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+            if (inputs.Length > 1)
+            {
+                return int.Parse(inputs[0]) + int.Parse(inputs[1]);
+            }
+
             return int.Parse(input);
         }
     }
