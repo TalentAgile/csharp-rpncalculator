@@ -46,7 +46,6 @@ namespace CSharp_KataRPNCalculator
 
         [TestCase("1 1 /", 1)]
         [TestCase("9 3 /", 3)]
-        [Ignore("Remove to enable the test")]
         public void Return_quotient_of_numbers_when_input_contains_two_numbers_and_division_sign(string input, int expected)
         {
             var result = RpnCalculator.Calculate(input);

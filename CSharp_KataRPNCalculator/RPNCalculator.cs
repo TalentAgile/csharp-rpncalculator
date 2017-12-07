@@ -27,6 +27,8 @@ namespace CSharp_KataRPNCalculator
                     return int.Parse(inputs[0]) - int.Parse(inputs[1]);
                 case "*":
                     return int.Parse(inputs[0]) * int.Parse(inputs[1]);
+                case "/":
+                    return int.Parse(inputs[0]) / int.Parse(inputs[1]);
             }
 
             return int.Parse(input);
