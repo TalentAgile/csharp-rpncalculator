@@ -15,10 +15,8 @@ namespace CSharp_KataRPNCalculator
 
             var inputs = input.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-            var emptyStack = new Stack<int>();
-            emptyStack = inputs.Aggregate(emptyStack, Apply);
-
-            return emptyStack.Pop();
+            var result = inputs.Aggregate(new Stack<int>(), Apply);
+            return result.Pop();
 
             int Add(int left, int right) => left + right;
             int Difference(int left, int right) => left - right;
