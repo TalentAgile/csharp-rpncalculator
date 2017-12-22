@@ -54,7 +54,6 @@ namespace CSharp_KataRPNCalculator
 
         [TestCase("1 2 + 3 *", 9)]
         [TestCase("16 4 - 1 1 + /", 6)]
-        [Ignore("Remove to enable the test")]
         public void Return_retsult_of_multiple_operations_when_input_contains_multiple_operations(string input, int expected)
         {
             var result = RpnCalculator.Calculate(input);
